@@ -138,6 +138,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_DIR = Path(__file__).resolve().parent.parent.parent
 
 
+# TODO : Media files like profile pictures etc.
 MEDIA_URL = '/media/'
 MEDIA_ROOT = MEDIA_DIR / 'media'
 
@@ -208,9 +209,9 @@ CORS_ALLOW_CREDENTIALS = True
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'config('DB_NAME')',
-#         'USER': 'config('DB_USER')',
-#         'HOST': 'config('DB_HOST')',
-#         'PASSWORD': 'config(DB_PASSWORD)',
+#         'NAME': config('DB_NAME'),
+#         'USER': config('DB_USER'),
+#         'HOST': config('DB_HOST'),
+#         'PASSWORD': config('DB_PASSWORD'),
 #     }
 # }
